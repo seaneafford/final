@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GuildRecruitmentModelStoreContainer" CdmEntityContainer="GuildRecruitmentEntities">
+    <EntitySetMapping Name="GuilRecruitments">
+      <EntityTypeMapping TypeName="GuildRecruitmentModel.GuilRecruitment">
+        <MappingFragment StoreEntitySet="GuilRecruitment">
+          <ScalarProperty Name="RcruitID" ColumnName="RcruitID" />
+          <ScalarProperty Name="CharacterName" ColumnName="CharacterName" />
+          <ScalarProperty Name="Realm" ColumnName="Realm" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Specialization" ColumnName="Specialization" />
+          <ScalarProperty Name="Offspec" ColumnName="Offspec" />
+          <ScalarProperty Name="RaidTimes" ColumnName="RaidTimes" />
+          <ScalarProperty Name="RaidingExperience" ColumnName="RaidingExperience" />
+          <ScalarProperty Name="CombatLogs" ColumnName="CombatLogs" />
+          <ScalarProperty Name="ArmoryLink" ColumnName="ArmoryLink" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="TellUsMore" ColumnName="TellUsMore" />
+          <ScalarProperty Name="hardcore" ColumnName="hardcore" />
+          <ScalarProperty Name="BattleTag" ColumnName="BattleTag" />
+          <ScalarProperty Name="Why" ColumnName="Why" />
+          <ScalarProperty Name="Reasons" ColumnName="Reasons" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

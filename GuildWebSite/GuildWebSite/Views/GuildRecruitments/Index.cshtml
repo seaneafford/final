@@ -1,0 +1,117 @@
+﻿@model IEnumerable<GuildWebSite.GuilRecruitment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Apply Now!", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CharacterName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Realm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Class)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Specialization)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Offspec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RaidTimes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RaidingExperience)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CombatLogs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArmoryLink)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TellUsMore)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hardcore)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BattleTag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Why)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reasons)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CharacterName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Realm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Class)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Specialization)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Offspec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RaidTimes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RaidingExperience)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CombatLogs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArmoryLink)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TellUsMore)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hardcore)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BattleTag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Why)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reasons)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RcruitID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RcruitID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RcruitID })
+        </td>
+    </tr>
+}
+
+</table>

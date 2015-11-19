@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GuildRecruitmentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GuilRecruitment">
+    <Key>
+      <PropertyRef Name="RcruitID" />
+    </Key>
+    <Property Name="RcruitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CharacterName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Realm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Class" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Specialization" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Offspec" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RaidTimes" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RaidingExperience" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CombatLogs" Type="nvarchar" MaxLength="50" />
+    <Property Name="ArmoryLink" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="TellUsMore" Type="nvarchar(max)" />
+    <Property Name="hardcore" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BattleTag" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Why" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Reasons" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="GuildRecruitmentModelStoreContainer">
+    <EntitySet Name="GuilRecruitment" EntityType="Self.GuilRecruitment" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
